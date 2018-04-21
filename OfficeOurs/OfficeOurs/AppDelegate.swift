@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import ChameleonFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
