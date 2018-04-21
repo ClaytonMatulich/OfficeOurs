@@ -1,7 +1,7 @@
 PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
-  - ChameleonFramework/Swift (2.1.0):
-    - ChameleonFramework/Default
   - Firebase (4.13.0):
     - Firebase/Core (= 4.13.0)
   - Firebase/Auth (4.13.0):
@@ -57,7 +57,7 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
-  - ChameleonFramework/Swift
+  - ChameleonFramework
   - Firebase
   - Firebase/Auth
   - Firebase/Database
@@ -95,6 +95,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 94f026b26044a971620f5009e02982cf962ba339
+PODFILE CHECKSUM: 816646972b2bfe5d53a71d13a1f61117fc727c56
 
 COCOAPODS: 1.5.0

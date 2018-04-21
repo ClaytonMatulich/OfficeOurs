@@ -10,7 +10,7 @@ pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'SVProgressHUD'
-pod 'ChameleonFramework/Swift'
+pod 'ChameleonFramework'
 pod 'Firebase/Storage'
 
 end
