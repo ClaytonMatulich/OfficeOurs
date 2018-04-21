@@ -15,6 +15,7 @@
 		930F7832208BCCBB009A6750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930F7831208BCCBB009A6750 /* Assets.xcassets */; };
 		930F7835208BCCBB009A6750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930F7833208BCCBB009A6750 /* LaunchScreen.storyboard */; };
 		932EDE9F208BD3350095D684 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 932EDE9E208BD3350095D684 /* GoogleService-Info.plist */; };
+		93969BB5208BFD0100660CDC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93969BB4208BFD0100660CDC /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		930F7834208BCCBB009A6750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		930F7836208BCCBB009A6750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		932EDE9E208BD3350095D684 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93969BB4208BFD0100660CDC /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				930F7827208BCCBB009A6750 /* AppDelegate.swift */,
 				930F7829208BCCBB009A6750 /* ViewController.swift */,
+				93969BB4208BFD0100660CDC /* RegistrationViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				930F782A208BCCBB009A6750 /* ViewController.swift in Sources */,
 				930F7830208BCCBB009A6750 /* OfficeOurs.xcdatamodeld in Sources */,
+				93969BB5208BFD0100660CDC /* RegistrationViewController.swift in Sources */,
 				930F7828208BCCBB009A6750 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
