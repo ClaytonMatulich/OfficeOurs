@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E8267B8D1F293900A567767 /* Pods_OfficeOurs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F110A9B136AAA8773C72AFE /* Pods_OfficeOurs.framework */; };
 		930F7828208BCCBB009A6750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F7827208BCCBB009A6750 /* AppDelegate.swift */; };
 		930F782A208BCCBB009A6750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F7829208BCCBB009A6750 /* ViewController.swift */; };
 		930F782D208BCCBB009A6750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930F782B208BCCBB009A6750 /* Main.storyboard */; };
 		930F7830208BCCBB009A6750 /* OfficeOurs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 930F782E208BCCBB009A6750 /* OfficeOurs.xcdatamodeld */; };
 		930F7832208BCCBB009A6750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930F7831208BCCBB009A6750 /* Assets.xcassets */; };
 		930F7835208BCCBB009A6750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930F7833208BCCBB009A6750 /* LaunchScreen.storyboard */; };
+		932EDE9F208BD3350095D684 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 932EDE9E208BD3350095D684 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		235C3AFE1603AAFF4A6D0849 /* Pods-OfficeOurs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfficeOurs.release.xcconfig"; path = "Pods/Target Support Files/Pods-OfficeOurs/Pods-OfficeOurs.release.xcconfig"; sourceTree = "<group>"; };
+		3F110A9B136AAA8773C72AFE /* Pods_OfficeOurs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfficeOurs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5478B123F56BF09275A8A4D3 /* Pods-OfficeOurs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfficeOurs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OfficeOurs/Pods-OfficeOurs.debug.xcconfig"; sourceTree = "<group>"; };
 		930F7824208BCCBB009A6750 /* OfficeOurs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfficeOurs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		930F7827208BCCBB009A6750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		930F7829208BCCBB009A6750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		930F7831208BCCBB009A6750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		930F7834208BCCBB009A6750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		930F7836208BCCBB009A6750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932EDE9E208BD3350095D684 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8267B8D1F293900A567767 /* Pods_OfficeOurs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		685C6D42A99A71BEB4B7333F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5478B123F56BF09275A8A4D3 /* Pods-OfficeOurs.debug.xcconfig */,
+				235C3AFE1603AAFF4A6D0849 /* Pods-OfficeOurs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		930F781B208BCCBB009A6750 = {
 			isa = PBXGroup;
 			children = (
 				930F7826208BCCBB009A6750 /* OfficeOurs */,
 				930F7825208BCCBB009A6750 /* Products */,
+				685C6D42A99A71BEB4B7333F /* Pods */,
+				C12CF0DCA26EC81B9839ADEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +74,56 @@
 		930F7826208BCCBB009A6750 /* OfficeOurs */ = {
 			isa = PBXGroup;
 			children = (
-				930F7827208BCCBB009A6750 /* AppDelegate.swift */,
-				930F7829208BCCBB009A6750 /* ViewController.swift */,
-				930F782B208BCCBB009A6750 /* Main.storyboard */,
+				932EDEA4208BD52E0095D684 /* Supporting Files */,
+				932EDEA3208BD4F40095D684 /* Controller */,
+				932EDEA2208BD4DA0095D684 /* View */,
+				932EDEA1208BD4A90095D684 /* Model */,
 				930F7831208BCCBB009A6750 /* Assets.xcassets */,
-				930F7833208BCCBB009A6750 /* LaunchScreen.storyboard */,
-				930F7836208BCCBB009A6750 /* Info.plist */,
 				930F782E208BCCBB009A6750 /* OfficeOurs.xcdatamodeld */,
 			);
 			path = OfficeOurs;
+			sourceTree = "<group>";
+		};
+		932EDEA1208BD4A90095D684 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		932EDEA2208BD4DA0095D684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				930F7833208BCCBB009A6750 /* LaunchScreen.storyboard */,
+				930F782B208BCCBB009A6750 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		932EDEA3208BD4F40095D684 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				930F7827208BCCBB009A6750 /* AppDelegate.swift */,
+				930F7829208BCCBB009A6750 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		932EDEA4208BD52E0095D684 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				930F7836208BCCBB009A6750 /* Info.plist */,
+				932EDE9E208BD3350095D684 /* GoogleService-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C12CF0DCA26EC81B9839ADEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F110A9B136AAA8773C72AFE /* Pods_OfficeOurs.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 930F7839208BCCBB009A6750 /* Build configuration list for PBXNativeTarget "OfficeOurs" */;
 			buildPhases = (
+				3C2E7038B95083DC863B7451 /* [CP] Check Pods Manifest.lock */,
 				930F7820208BCCBB009A6750 /* Sources */,
 				930F7821208BCCBB009A6750 /* Frameworks */,
 				930F7822208BCCBB009A6750 /* Resources */,
+				FFA81E2D523488E46F081227 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +187,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				930F7835208BCCBB009A6750 /* LaunchScreen.storyboard in Resources */,
+				932EDE9F208BD3350095D684 /* GoogleService-Info.plist in Resources */,
 				930F7832208BCCBB009A6750 /* Assets.xcassets in Resources */,
 				930F782D208BCCBB009A6750 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C2E7038B95083DC863B7451 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OfficeOurs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA81E2D523488E46F081227 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OfficeOurs/Pods-OfficeOurs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OfficeOurs/Pods-OfficeOurs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		930F7820208BCCBB009A6750 /* Sources */ = {
@@ -282,6 +393,7 @@
 		};
 		930F783A208BCCBB009A6750 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5478B123F56BF09275A8A4D3 /* Pods-OfficeOurs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +412,7 @@
 		};
 		930F783B208BCCBB009A6750 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235C3AFE1603AAFF4A6D0849 /* Pods-OfficeOurs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

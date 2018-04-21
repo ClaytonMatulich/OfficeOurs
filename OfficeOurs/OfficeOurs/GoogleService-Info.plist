@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>840929339272-jq5g1f16esjrrkmusn8p49fettr4s6rr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.840929339272-jq5g1f16esjrrkmusn8p49fettr4s6rr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDSDM0Ncpr83bQruBX5c882vkN_eoevDjQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>840929339272</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.claytonmatulich.OfficeOurs</string>
+	<key>PROJECT_ID</key>
+	<string>officeours-19a40</string>
+	<key>STORAGE_BUCKET</key>
+	<string>officeours-19a40.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:840929339272:ios:8d7fa3fdc325c2e2</string>
+	<key>DATABASE_URL</key>
+	<string>https://officeours-19a40.firebaseio.com</string>
+</dict>
+</plist>
