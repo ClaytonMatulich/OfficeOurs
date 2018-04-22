@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class RegistrationViewController: UIViewController {
+class RoleSelectorViewController: UIViewController {
 
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -43,7 +43,7 @@ class RegistrationViewController: UIViewController {
                 print(error!)
             }else{
                 print("Registration Successfull")
-                self.performSegue(withIdentifier: "goToProfileFromRegistration", sender: self)
+                //self.performSegue(withIdentifier: "goToProfileFromRegistration", sender: self)
             }
         }
     }

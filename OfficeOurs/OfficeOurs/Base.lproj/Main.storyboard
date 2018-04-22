@@ -121,64 +121,88 @@
             </objects>
             <point key="canvasLocation" x="2700" y="135"/>
         </scene>
-        <!--Registration View Controller-->
+        <!--Role Selector View Controller-->
         <scene sceneID="JdL-69-43Q">
             <objects>
-                <viewController id="O4G-Yw-Cvz" customClass="RegistrationViewController" customModule="OfficeOurs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="O4G-Yw-Cvz" customClass="RoleSelectorViewController" customModule="OfficeOurs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AhG-ZH-3XK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVj-fk-HwM">
-                                <rect key="frame" x="159" y="306" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYu-Fy-feb">
-                                <rect key="frame" x="166" y="456" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Registration"/>
-                                <connections>
-                                    <action selector="registrationPressed:" destination="O4G-Yw-Cvz" eventType="touchUpInside" id="qBz-xs-Hay"/>
-                                    <segue destination="w5F-Wk-mo3" kind="presentation" identifier="goToProfileFromRegistration" id="86k-K0-74s"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAi-n6-ZoI">
                                 <rect key="frame" x="26" y="686" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
+                                    <action selector="backButtonPressed:" destination="O4G-Yw-Cvz" eventType="touchUpInside" id="AmU-jQ-uHz"/>
                                     <action selector="backButtonPushed:" destination="O4G-Yw-Cvz" eventType="touchUpInside" id="Og7-Px-qbg"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sn1-1V-uXm">
-                                <rect key="frame" x="159" y="241" width="97" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMH-ar-eK2">
+                                <rect key="frame" x="172" y="368" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Student"/>
+                                <connections>
+                                    <segue destination="gPd-CJ-u0q" kind="presentation" id="HO0-a7-xwn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFB-dp-NT0">
+                                <rect key="frame" x="172" y="438" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Teacher"/>
+                                <connections>
+                                    <segue destination="geY-GG-ctr" kind="presentation" id="cow-hy-BEg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am a . . ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leo-4D-cj1">
+                                <rect key="frame" x="154" y="174" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WjI-d1-4uj"/>
                     </view>
-                    <connections>
-                        <outlet property="emailTextField" destination="sn1-1V-uXm" id="v2t-bq-tDm"/>
-                        <outlet property="passwordTextField" destination="OVj-fk-HwM" id="Y1u-pa-mHu"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AqN-Po-yR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1659" y="889"/>
+            <point key="canvasLocation" x="1657.9710144927537" y="888.58695652173924"/>
+        </scene>
+        <!--Student Registration View Controller-->
+        <scene sceneID="azc-BZ-A45">
+            <objects>
+                <viewController id="gPd-CJ-u0q" customClass="StudentRegistrationViewController" customModule="OfficeOurs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p9v-tE-USY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tvC-cI-cDp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOK-uQ-Opr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2732" y="889"/>
+        </scene>
+        <!--Teacher Registration View Controller-->
+        <scene sceneID="KHj-CR-c4v">
+            <objects>
+                <viewController id="geY-GG-ctr" customClass="TeacherRegistrationViewController" customModule="OfficeOurs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LWT-AQ-Haw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lDw-Sn-G4f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E55-3K-n5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2699" y="1672"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="800" height="800"/>
         <image name="landingbackground" width="2250" height="1500"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="fHD-6k-STl"/>
-    </inferredMetricsTieBreakers>
 </document>
