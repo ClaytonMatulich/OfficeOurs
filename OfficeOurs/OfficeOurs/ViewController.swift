@@ -18,7 +18,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    var ref: DatabaseReference!
     var handle: AuthStateDidChangeListenerHandle?
+    
     
     
     override func viewDidLoad() {
@@ -26,6 +28,8 @@ class ViewController: UIViewController {
         loginButton.layer.borderWidth = 1
         loginButton.layer.cornerRadius = 20
         loginButton.clipsToBounds = true
+        
+        ref = Database.database().reference()
     }
 
     override func didReceiveMemoryWarning() {

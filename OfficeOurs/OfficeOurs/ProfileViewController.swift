@@ -45,17 +45,37 @@ class ProfileViewController: UIViewController {
     
     func updateProfileDataUI(){
         let userID = Auth.auth().currentUser?.uid
-        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+        var profileType = ""
+
+        
+        
+        ref.child("users").child("teacher").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let value = snapshot.value as? NSDictionary
-            let firstName = value?["firstName"] as? String ?? ""
-            print(firstName) // prints "" every passthrough
-            print("test")
+            let teacherID = value?["teacherID"] as? String ?? ""
+            profileType = "teacher"
+            if (teacherID == "") {
+                self.ref.child("users").child("student").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+                    let value = snapshot.value as? NSDictionary
+                    let studentID = value?["studentID"] as? String ?? ""
+                    print("It's a fucking student \(studentID)")
+                    profileType = "student"
+                    print("test2: \(profileType)")
+                
+                }) { (error) in
+                    print(error.localizedDescription)
+                    
+                }
+            }
+            
+            print("test: \(profileType)")
             
            
         }) { (error) in
             print(error.localizedDescription)
         }
+        
+        print("test3: \(profileType)")
 
     }
     
