@@ -23,13 +23,15 @@ class ProfileViewController: UIViewController {
 
         self.userProfile.layer.cornerRadius = self.userProfile.frame.size.width / 2;
         self.userProfile.clipsToBounds = true
+        self.userProfile.layer.borderWidth = 1
+        self.userProfile.layer.borderColor = UIColor.white.cgColor
         
         manageButton.layer.cornerRadius = 20
         manageButton.clipsToBounds = true
-        manageButton.layer.borderWidth = 1
+        
         scheduleButton.layer.cornerRadius = 20
         scheduleButton.clipsToBounds = true
-        scheduleButton.layer.borderWidth = 1
+        
         
     }
 
