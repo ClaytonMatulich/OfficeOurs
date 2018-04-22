@@ -11,10 +11,24 @@ import Firebase
 
 class ProfileViewController: UIViewController {
 
+   
+    
+    @IBOutlet weak var manageButton: UIButton!
+    @IBOutlet weak var scheduleButton: UIButton!
+    @IBOutlet weak var userProfile: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.userProfile.layer.cornerRadius = self.userProfile.frame.size.width / 2;
+        self.userProfile.clipsToBounds = true
+        
+        manageButton.layer.cornerRadius = 20
+        manageButton.clipsToBounds = true
+        scheduleButton.layer.cornerRadius = 20
+        scheduleButton.clipsToBounds = true
+        
     }
 
     override func didReceiveMemoryWarning() {
