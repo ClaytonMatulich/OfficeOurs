@@ -265,7 +265,10 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="CDr-kn-oCY" id="TXm-Q7-Lz4"/>
+                        <outlet property="firstNameTextField" destination="xHc-X2-ipx" id="yMY-w8-Mio"/>
+                        <outlet property="lastNameTextField" destination="wzy-Q4-aLI" id="nIf-mh-wdx"/>
                         <outlet property="passwordTextField" destination="JUG-PU-TMw" id="ux3-VP-dYR"/>
+                        <outlet property="studentIDTextField" destination="fXa-cT-4Eh" id="Rjf-l8-pXe"/>
                         <outlet property="submitButton" destination="ENU-1z-FKe" id="et1-aE-pKl"/>
                     </connections>
                 </viewController>

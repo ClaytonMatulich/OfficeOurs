@@ -11,8 +11,12 @@ import Firebase
 
 class StudentRegistrationViewController: UIViewController {
 
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var studentIDTextField: UITextField!
+    
     
     @IBOutlet weak var submitButton: UIButton!
     
@@ -33,7 +37,11 @@ class StudentRegistrationViewController: UIViewController {
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-            if error != nil{
+            if error != nil,
+                firstNameTextField != nil,
+                lastNameTextField != nil,
+                
+                {
                 print(error!)
             }else{
                 //success
@@ -48,6 +56,4 @@ class StudentRegistrationViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
-
 }
