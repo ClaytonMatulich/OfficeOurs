@@ -17,10 +17,14 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var scheduleButton: UIButton!
     @IBOutlet weak var userProfile: UIImageView!
     
+    var ref: DatabaseReference!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ref = Database.database().reference()
+        updateProfileDataUI()
+        
         self.userProfile.layer.cornerRadius = self.userProfile.frame.size.width / 2;
         self.userProfile.clipsToBounds = true
         self.userProfile.layer.borderWidth = 1
@@ -32,12 +36,30 @@ class ProfileViewController: UIViewController {
         scheduleButton.layer.cornerRadius = 20
         scheduleButton.clipsToBounds = true
         
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateProfileDataUI(){
+        let userID = Auth.auth().currentUser?.uid
+        ref.child("users").child("students").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+//            let value = snapshot.value as? NSDictionary
+//            let firstName = value?["firstName"] as? String ?? ""
+//            let user = User(firstName : firstName)
+            print(snapshot)
+            //print(firstName)
+            print("observing data")
+            
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+            print("didn't work")
+        }
+
     }
     
     @IBAction func signOutButtonPressed(_ sender: UIButton) {
