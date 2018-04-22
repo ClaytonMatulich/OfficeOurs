@@ -14,12 +14,14 @@ class StudentRegistrationViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBOutlet weak var submitButton: UIImageView!
+    @IBOutlet weak var submitButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         submitButton.layer.cornerRadius = 10
         submitButton.clipsToBounds = true
+        submitButton.layer.borderWidth = 1
         
     }
 
