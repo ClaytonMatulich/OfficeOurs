@@ -32,6 +32,7 @@
                                 </state>
                                 <connections>
                                     <action selector="pressedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JlI-mE-SzZ"/>
+                                    <segue destination="w5F-Wk-mo3" kind="presentation" id="fHD-6k-STl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNt-ms-wPA">
@@ -65,7 +66,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -78,6 +79,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="663.768115942029" y="134.5108695652174"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="jhN-vr-t23">
+            <objects>
+                <viewController id="w5F-Wk-mo3" customClass="ProfileViewController" customModule="OfficeOurs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jiM-yb-1Is">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHj-i9-OUQ">
+                                <rect key="frame" x="177" y="590" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BUTTON"/>
+                                <connections>
+                                    <action selector="signOutButtonPressed:" destination="w5F-Wk-mo3" eventType="touchUpInside" id="sCy-FZ-LXw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ByE-EF-hVC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3U-aL-Lqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="135"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="JdL-69-43Q">
@@ -100,6 +126,7 @@
                                 <state key="normal" title="Registration"/>
                                 <connections>
                                     <action selector="registrationPressed:" destination="O4G-Yw-Cvz" eventType="touchUpInside" id="qBz-xs-Hay"/>
+                                    <segue destination="w5F-Wk-mo3" kind="presentation" id="86k-K0-74s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAi-n6-ZoI">
@@ -128,10 +155,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AqN-Po-yR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="972"/>
+            <point key="canvasLocation" x="1659" y="889"/>
         </scene>
     </scenes>
     <resources>
         <image name="MainBackground" width="1440" height="900"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fHD-6k-STl"/>
+    </inferredMetricsTieBreakers>
 </document>

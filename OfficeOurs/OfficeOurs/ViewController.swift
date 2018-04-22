@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    var handle: AuthStateDidChangeListenerHandle?
     
     
     override func viewDidLoad() {
@@ -25,6 +26,19 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            
+        }
+        // [END auth_listener]
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        Auth.auth().removeStateDidChangeListener(handle!)
+        // remove_auth_listener]
     }
 
     @IBAction func pressedLoginButton(_ sender: UIButton) {

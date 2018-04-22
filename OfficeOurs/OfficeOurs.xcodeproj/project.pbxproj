@@ -16,6 +16,7 @@
 		930F7835208BCCBB009A6750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930F7833208BCCBB009A6750 /* LaunchScreen.storyboard */; };
 		932EDE9F208BD3350095D684 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 932EDE9E208BD3350095D684 /* GoogleService-Info.plist */; };
 		93969BB7208C032C00660CDC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93969BB6208C032C00660CDC /* RegistrationViewController.swift */; };
+		93969BBB208C16BF00660CDC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93969BBA208C16BF00660CDC /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		930F7836208BCCBB009A6750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		932EDE9E208BD3350095D684 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93969BB6208C032C00660CDC /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		93969BBA208C16BF00660CDC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				930F7827208BCCBB009A6750 /* AppDelegate.swift */,
 				930F7829208BCCBB009A6750 /* ViewController.swift */,
 				93969BB6208C032C00660CDC /* RegistrationViewController.swift */,
+				93969BBA208C16BF00660CDC /* ProfileViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			files = (
 				930F782A208BCCBB009A6750 /* ViewController.swift in Sources */,
 				930F7830208BCCBB009A6750 /* OfficeOurs.xcdatamodeld in Sources */,
+				93969BBB208C16BF00660CDC /* ProfileViewController.swift in Sources */,
 				93969BB7208C032C00660CDC /* RegistrationViewController.swift in Sources */,
 				930F7828208BCCBB009A6750 /* AppDelegate.swift in Sources */,
 			);
