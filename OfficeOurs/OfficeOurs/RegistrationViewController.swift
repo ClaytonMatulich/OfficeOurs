@@ -43,7 +43,7 @@ class RegistrationViewController: UIViewController {
                 print(error!)
             }else{
                 print("Registration Successfull")
-                //self.performSegue(withIdentifier: "", sender: self)
+                self.performSegue(withIdentifier: "goToProfileFromRegistration", sender: self)
             }
         }
     }

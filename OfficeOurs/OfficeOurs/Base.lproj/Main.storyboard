@@ -32,7 +32,7 @@
                                 </state>
                                 <connections>
                                     <action selector="pressedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JlI-mE-SzZ"/>
-                                    <segue destination="w5F-Wk-mo3" kind="presentation" id="fHD-6k-STl"/>
+                                    <segue destination="w5F-Wk-mo3" kind="presentation" identifier="goToProfileFromLogin" id="fHD-6k-STl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNt-ms-wPA">
@@ -126,7 +126,7 @@
                                 <state key="normal" title="Registration"/>
                                 <connections>
                                     <action selector="registrationPressed:" destination="O4G-Yw-Cvz" eventType="touchUpInside" id="qBz-xs-Hay"/>
-                                    <segue destination="w5F-Wk-mo3" kind="presentation" id="86k-K0-74s"/>
+                                    <segue destination="w5F-Wk-mo3" kind="presentation" identifier="goToProfileFromRegistration" id="86k-K0-74s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAi-n6-ZoI">
