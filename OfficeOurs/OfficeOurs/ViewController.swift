@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
     var handle: AuthStateDidChangeListenerHandle?
     
     
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
                 print(error!)
             }else{
                 print("Login Successfull")
-                self.performSegue(withIdentifier: "goToProfileFromLogin", sender: self)
+                self.performSegue(withIdentifier: "login", sender: self)
             }
         }
     }
