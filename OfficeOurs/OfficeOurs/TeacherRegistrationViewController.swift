@@ -10,10 +10,21 @@ import UIKit
 
 class TeacherRegistrationViewController: UIViewController {
 
+    @IBOutlet weak var submitButton: UIButton!
+    
+    @IBOutlet weak var backButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      submitButton.layer.borderWidth = 1
+        submitButton.layer.cornerRadius = 20
+        submitButton.clipsToBounds = true
+        
+        backButton.layer.borderWidth = 1
+        backButton.layer.cornerRadius = 20
+            backButton.clipsToBounds = true
+
     }
 
     override func didReceiveMemoryWarning() {
