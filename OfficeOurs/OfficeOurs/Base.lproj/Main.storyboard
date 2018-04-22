@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3U-aL-Lqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2700" y="135"/>
+            <point key="canvasLocation" x="2732" y="135"/>
         </scene>
         <!--Role Selector View Controller-->
         <scene sceneID="JdL-69-43Q">
@@ -186,14 +186,40 @@
                                     <action selector="backButtonPressed:" destination="gPd-CJ-u0q" eventType="touchUpInside" id="rR4-GJ-x8I"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CDr-kn-oCY">
+                                <rect key="frame" x="117" y="204" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JUG-PU-TMw">
+                                <rect key="frame" x="117" y="274" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENU-1z-FKe">
+                                <rect key="frame" x="179" y="525" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="gPd-CJ-u0q" eventType="touchUpInside" id="LV3-vR-XOL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tvC-cI-cDp"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="CDr-kn-oCY" id="TXm-Q7-Lz4"/>
+                        <outlet property="passwordTextField" destination="JUG-PU-TMw" id="ux3-VP-dYR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOK-uQ-Opr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2732" y="889"/>
+            <point key="canvasLocation" x="2730.434782608696" y="888.58695652173924"/>
         </scene>
         <!--Teacher Registration View Controller-->
         <scene sceneID="KHj-CR-c4v">
@@ -218,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E55-3K-n5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2699" y="1672"/>
+            <point key="canvasLocation" x="2732" y="1665"/>
         </scene>
     </scenes>
     <resources>
