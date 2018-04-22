@@ -17,9 +17,7 @@ class StudentRegistrationViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var studentIDTextField: UITextField!
     
-    
     @IBOutlet weak var submitButton: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +36,11 @@ class StudentRegistrationViewController: UIViewController {
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             if error != nil,
-                firstNameTextField != nil,
-                lastNameTextField != nil,
-                
-                {
+                self.firstNameTextField != nil,
+                self.lastNameTextField != nil,
+                self.studentIDTextField != nil   {
                 print(error!)
-            }else{
+            }   else{
                 //success
                 print("Student Registration Successfull")
                 self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
