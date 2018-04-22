@@ -19,11 +19,17 @@ class StudentRegistrationViewController: UIViewController {
     
     @IBOutlet weak var submitButton: UIButton!
     
+    @IBOutlet weak var backButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         submitButton.layer.cornerRadius = 20
         submitButton.clipsToBounds = true
         submitButton.layer.borderWidth = 1
+        
+        backButton.layer.cornerRadius = 20
+            backButton.clipsToBounds = true
+        backButton.layer.borderWidth = 1
         
     }
 
@@ -53,4 +59,9 @@ class StudentRegistrationViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    
+    @IBAction func logoPress(_ sender: UIButton) {
+    }
+    
 }
