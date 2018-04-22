@@ -16,6 +16,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var manageButton: UIButton!
     @IBOutlet weak var scheduleButton: UIButton!
     @IBOutlet weak var userProfile: UIImageView!
+    @IBOutlet weak var profileTypeTextView: UILabel!
     
     var ref: DatabaseReference!
     
@@ -55,27 +56,16 @@ class ProfileViewController: UIViewController {
             let teacherID = value?["teacherID"] as? String ?? ""
             profileType = "teacher"
             if (teacherID == "") {
-                self.ref.child("users").child("student").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-                    let value = snapshot.value as? NSDictionary
-                    let studentID = value?["studentID"] as? String ?? ""
-                    print("It's a fucking student \(studentID)")
-                    profileType = "student"
-                    print("test2: \(profileType)")
-                
-                }) { (error) in
-                    print(error.localizedDescription)
-                    
-                }
+                profileType = "student"
+                let studentID = value?["studentID"] as? String ?? ""
+                print("TEST: \(studentID)")
             }
-            
-            print("test: \(profileType)")
+            self.profileTypeTextView.text = profileType.capitalized
             
            
         }) { (error) in
             print(error.localizedDescription)
         }
-        
-        print("test3: \(profileType)")
 
     }
     

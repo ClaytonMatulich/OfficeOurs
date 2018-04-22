@@ -198,6 +198,7 @@
                     </view>
                     <connections>
                         <outlet property="manageButton" destination="U0x-fz-KWz" id="AXZ-a9-oFT"/>
+                        <outlet property="profileTypeTextView" destination="fVh-5R-Kc5" id="rwA-uT-5CN"/>
                         <outlet property="scheduleButton" destination="xHj-i9-OUQ" id="ngx-61-MdD"/>
                         <outlet property="userProfile" destination="EjH-3b-yhi" id="Axw-6P-hoY"/>
                     </connections>
