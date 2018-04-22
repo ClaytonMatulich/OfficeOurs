@@ -428,6 +428,11 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="LNc-Xr-Iut" id="78Z-NL-wCI"/>
+                        <outlet property="emailTextField" destination="QdI-2y-Cl6" id="bcN-UC-b03"/>
+                        <outlet property="firstNameTextField" destination="Qju-Fh-5tf" id="RaA-Qm-HP8"/>
+                        <outlet property="lastNameTextField" destination="7pt-kc-Zda" id="nZF-of-PuX"/>
+                        <outlet property="passwordTextField" destination="DT4-18-9Pf" id="NO3-Zu-mfa"/>
+                        <outlet property="schoolNameTextField" destination="hrI-rE-8Wc" id="VLc-jx-yEo"/>
                         <outlet property="submitButton" destination="STu-6N-ADd" id="AQS-kO-Ufo"/>
                     </connections>
                 </viewController>

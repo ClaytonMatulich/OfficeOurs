@@ -7,10 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class TeacherRegistrationViewController: UIViewController {
 
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var schoolNameTextField: UITextField!
+    
+    
     @IBOutlet weak var submitButton: UIButton!
+    
     
     @IBOutlet weak var backButton: UIButton!
     
