@@ -37,6 +37,7 @@ class TeacherRegistrationViewController: UIViewController {
     }
     
     @IBAction func logoPressed(_ sender: UIButton) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     
