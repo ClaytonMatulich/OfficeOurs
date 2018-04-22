@@ -174,7 +174,6 @@
                                 </state>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="O4G-Yw-Cvz" eventType="touchUpInside" id="AmU-jQ-uHz"/>
-                                    <action selector="backButtonPushed:" destination="O4G-Yw-Cvz" eventType="touchUpInside" id="Og7-Px-qbg"/>
                                 </connections>
                             </button>
                         </subviews>
