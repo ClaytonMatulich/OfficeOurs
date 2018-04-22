@@ -23,7 +23,7 @@ class TeacherRegistrationViewController: UIViewController {
         
         backButton.layer.borderWidth = 1
         backButton.layer.cornerRadius = 20
-            backButton.clipsToBounds = true
+        backButton.clipsToBounds = true
 
     }
 
