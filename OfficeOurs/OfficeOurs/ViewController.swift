@@ -16,12 +16,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var loginButton: UIButton!
+    
     var handle: AuthStateDidChangeListenerHandle?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.cornerRadius = 20
+        loginButton.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {

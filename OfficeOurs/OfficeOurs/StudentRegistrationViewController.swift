@@ -21,7 +21,7 @@ class StudentRegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        submitButton.layer.cornerRadius = 10
+        submitButton.layer.cornerRadius = 20
         submitButton.clipsToBounds = true
         submitButton.layer.borderWidth = 1
         

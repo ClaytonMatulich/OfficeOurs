@@ -23,12 +23,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS7-Lw-mBn">
-                                <rect key="frame" x="89" y="487" width="237" height="40"/>
+                                <rect key="frame" x="117" y="488" width="181" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75457512842465757" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 <state key="normal" title="login">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="pressedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JlI-mE-SzZ"/>
@@ -60,8 +60,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="N o t   A   M e m b e r ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouk-io-gAN">
-                                <rect key="frame" x="98" y="531" width="126" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n o t  a  m e m b e r" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouk-io-gAN">
+                                <rect key="frame" x="117" y="531" width="126" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -72,7 +72,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNt-ms-wPA">
-                                <rect key="frame" x="250" y="531" width="62" height="26"/>
+                                <rect key="frame" x="236" y="531" width="62" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97958728481497392" green="1" blue="0.9403650732323704" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
@@ -88,6 +88,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="Tv0-Wn-sGX" id="TAB-QG-pWS"/>
+                        <outlet property="loginButton" destination="LS7-Lw-mBn" id="OXy-Ka-3Mk"/>
                         <outlet property="passwordTextField" destination="7i4-Zh-FLU" id="d2a-2g-ujg"/>
                         <segue destination="w5F-Wk-mo3" kind="presentation" identifier="login" id="dCh-Oe-qXl"/>
                     </connections>
@@ -137,7 +138,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMH-ar-eK2">
                                 <rect key="frame" x="79" y="368" width="256" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.96242121029946692" blue="0.98267981006036775" alpha="0.038206335616438353" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                 <state key="normal" title="s t u d e n t">
                                     <color key="titleColor" red="1" green="0.83764464823335705" blue="0.13859283778475318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -149,7 +150,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFB-dp-NT0">
                                 <rect key="frame" x="79" y="423" width="256" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.98767387829284436" blue="0.98598717093257138" alpha="0.051647046232876678" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                 <state key="normal" title="t e a c h e r">
                                     <color key="titleColor" red="1" green="0.88923918058966156" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -180,6 +181,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WjI-d1-4uj"/>
                     </view>
+                    <connections>
+                        <outlet property="studentButton" destination="yMH-ar-eK2" id="NYK-hS-uxv"/>
+                        <outlet property="teacherButton" destination="WFB-dp-NT0" id="P6f-gS-WOE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AqN-Po-yR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
