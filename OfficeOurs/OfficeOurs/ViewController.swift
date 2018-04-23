@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         loginButton.layer.cornerRadius = 20
         loginButton.clipsToBounds = true
         
+        self.hideKeyboardWhenTappedAround()  
+    
         ref = Database.database().reference()
     }
 
@@ -61,5 +63,18 @@ class ViewController: UIViewController {
         }
     }
     
+}
+
+//ads functionality to UIViewController to dismiss keyboard upon tap
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 

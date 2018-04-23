@@ -24,6 +24,7 @@ class StudentRegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround() 
         submitButton.layer.cornerRadius = 20
         submitButton.clipsToBounds = true
         submitButton.layer.borderWidth = 1
