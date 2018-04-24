@@ -11,12 +11,15 @@ import Firebase
 import FirebaseAuth
 import ChameleonFramework
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var loginButton: UIButton!
+    
+
+
+    
     
     var ref: DatabaseReference!
     var handle: AuthStateDidChangeListenerHandle?
@@ -29,8 +32,9 @@ class ViewController: UIViewController {
         loginButton.layer.cornerRadius = 20
         loginButton.clipsToBounds = true
         
-        self.hideKeyboardWhenTappedAround()  
-    
+        self.hideKeyboardWhenTappedAround()
+        emailTextField.delegate = self
+        emailTextField.tag = 0
         ref = Database.database().reference()
     }
 
@@ -63,6 +67,28 @@ class ViewController: UIViewController {
         }
     }
     
+    func setUpTextFields(){    // sets up text fields to be able to interact with textFieldShouldReturn
+        emailTextField.delegate = self
+        emailTextField.tag = 0
+        
+        passwordTextField.delegate = self
+        passwordTextField.tag = 1
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool  //when return button is pressed, move to next textfield
+    {
+        // Try to find next responder
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+        }
+        // Do not add a line break
+        return false
+    }
+
+    
 }
 
 //ads functionality to UIViewController to dismiss keyboard upon tap
@@ -77,4 +103,12 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+
+
+
+
+
+
+
 

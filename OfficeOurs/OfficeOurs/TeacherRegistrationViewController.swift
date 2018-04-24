@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class TeacherRegistrationViewController: UIViewController {
+class TeacherRegistrationViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -25,7 +25,10 @@ class TeacherRegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround() 
+        self.hideKeyboardWhenTappedAround()
+        setUpTextFields()
+
+        /////////UI
         submitButton.layer.borderWidth = 1
         submitButton.layer.cornerRadius = 20
         submitButton.clipsToBounds = true
@@ -33,6 +36,7 @@ class TeacherRegistrationViewController: UIViewController {
         backButton.layer.borderWidth = 1
         backButton.layer.cornerRadius = 20
         backButton.clipsToBounds = true
+        /////////
         
         ref = Database.database().reference()
     }
@@ -63,6 +67,42 @@ class TeacherRegistrationViewController: UIViewController {
             }
         }
     }
+    
+    
+    func setUpTextFields(){         // sets up text fields to be able to interact with textFieldShouldReturn
+        firstNameTextField.delegate = self
+        firstNameTextField.tag = 0
+        
+        lastNameTextField.delegate = self
+        lastNameTextField.tag = 1
+        
+        emailTextField.delegate = self
+        emailTextField.tag = 2
+        
+        passwordTextField.delegate = self
+        passwordTextField.tag = 3
+        
+        schoolNameTextField.delegate = self
+        schoolNameTextField.tag = 4
+        
+        teacherIDTextField.delegate = self
+        teacherIDTextField.tag = 5
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool  //when return button is pressed, move to next textfield
+    {
+        // Try to find next responder
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            print("cant find next textfield")
+            textField.resignFirstResponder()
+        }
+        // Do not add a line break
+        return false
+    }
+    
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
